@@ -15,12 +15,12 @@ formatted_string2 = []
 string_length = len(input_string)
 
 while continue_loop:
-# if-else condition used to check if valid string is given as input
+    # if-else condition used to check if valid string is given as input
     if string_length==0 or input_string.isnumeric():
         input_string = input("Please enter a valid sentence: ")
         string_length = len(input_string)
     else:
-# for loop to read each character to achieve desired output
+        # for loop to read each character to achieve desired output
         for i in range(string_length):
             if(i%2 == 0):
                 upper_char = input_string[i].upper()
@@ -29,11 +29,11 @@ while continue_loop:
                 lower_char = input_string[i].lower()
                 formatted_string1 += lower_char
 
-# splitting input string and storing in list
+        # splitting input string and storing in list
         input_string = input_string.split()
         no_of_string = len(input_string)
         
-# for loop to read each string to achieve desired output
+        # for loop to read each string to achieve desired output
         for i in range(no_of_string):
             if i%2 == 0:
                 lower_string = input_string[i].lower()
