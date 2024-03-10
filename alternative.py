@@ -28,8 +28,6 @@ while continue_loop:
             elif(i%2 != 0):
                 lower_char = input_string[i].lower()
                 formatted_string1 += lower_char
-            else:
-                formatted_string1 += input_string[i]
 
 # splitting input string and storing in list
         input_string = input_string.split()
